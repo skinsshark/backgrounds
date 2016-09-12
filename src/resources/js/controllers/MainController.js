@@ -8,7 +8,7 @@ app.controller('MainController', ['$scope', function($scope) {
     // price: 19, 
     // pubdate: new Date('2014', '03', '08'), 
     cover: '/src/resources/images/cardwell-demo.png' ,
-    likes: 'https://github.com/skinsshark/Backgrounds/raw/master/src/resources/images/cardwell.jpg'
+    link: 'https://github.com/skinsshark/Backgrounds/raw/master/src/resources/images/cardwell.jpg'
   }, 
   { 
     name: 'West Yellowstone, Montana', 
