@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<link href="resources/css/bootstrap.min.css" rel="stylesheet" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+	<link href="resources/css/style.css" rel="stylesheet" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+
+	<title>backgrounds</title>
+</head>
+<body ng-app="myApp" ng-controller="MainController">
+	<div class="header">
+		<div class="container">
+			<h1 id="main-heading">{{title}} <span class="desc">{{ desc }}</span></h1>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="container">
+
+			<div class="col-md-6" ng-repeat="photo in photos">
+				<div class="thumbnail">
+					<img ng-src="{{ photo.cover }}">
+					<h2 class="title"> {{ photo.name }} </h2>
+					<p><a ng-href="https://github.com/skinsshark/Backgrounds/raw/master/resources/images/{{ photo.link }}" target="_blank">click here to save full resolution image </a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<span>&copy; 2016 sharon zheng</span>
+		</div>
+	</footer>
+
+
+	<!-- Modules -->
+	<script src="resources/js/app.js"></script>
+
+	<!-- Controllers -->
+	<script src="resources/js/controllers/MainController.js"></script>
+</body>
+</html>

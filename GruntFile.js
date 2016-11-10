@@ -7,8 +7,8 @@ module.exports = function (grunt)
 				separator: "\n\n"
 			},
 			dist: {
-				src: ['src/resources/js/**/*.js'],
-				dest: 'src/<%= pkg.name %>.js'
+				src: ['resources/js/**/*.js'],
+				dest: '<%= pkg.name %>.js'
 			},
 			deps: {
 				src: [
@@ -17,35 +17,35 @@ module.exports = function (grunt)
 					'bower_components/bootstrap/dist/js/bootstrap.js',
 					'bower_components/angularjs/angular.min.js',
 				],
-				dest: 'src/<%= pkg.name %>-deps.js'
+				dest: '<%= pkg.name %>-deps.js'
 			},
 			css: {
 				src: ['bower_components/bootstrap/dist/css/bootstrap.min.css',
-						'src/resources/css/styles.css'
+						'resources/css/styles.css'
 				],
-				dest: 'src/resources/css/<%= pkg.name %>.css'
+				dest: 'resources/css/<%= pkg.name %>.css'
 			},
 			move: {
 				src: ['bower_components/angularjs/angular.min.js.map'],
-				dest: 'src/angular.min.js.map'
+				dest: 'angular.min.js.map'
 			}
 		},
 
 		sass: {
 			dev: {
 				files: {
-					'src/resources/css/styles.css': 'src/resources/css/styles.scss'
+					'resources/css/styles.css': 'resources/css/styles.scss'
 				}
 			}
 		},
 
 		watch: {
 			scripts: {
-				files: ['src/resources/js/**/*.js'],
+				files: ['resources/js/**/*.js'],
 				tasks: ['concat:dist']
 			},
 			styles: {
-				files: ['src/resources/css/*.scss'],
+				files: ['resources/css/*.scss'],
 				tasks: ['sass']
 			}
 		}
