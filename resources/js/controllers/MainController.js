@@ -1,6 +1,6 @@
 app.controller('MainController', ['$scope', function($scope) {
   $scope.title = 'Backgrounds';
-  $scope.desc = 'a collection of photographs i took that i like to use as backgrounds';
+  $scope.desc = 'a collection of photographs taken by me with my phone that i like to use as backgrounds';
   $scope.instruc = 'click on an image to open it up in a new tab to save the image';
   $scope.photos = [
     {
