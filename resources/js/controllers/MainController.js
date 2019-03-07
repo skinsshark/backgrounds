@@ -5,23 +5,23 @@ app.controller('MainController', ['$scope', function($scope) {
   $scope.photos = [
     {
       name: 'Yellowstone, Probably',
-      cover: '/resources/images/yellowstone-demo.png',
+      cover: 'backgrounds/resources/images/yellowstone-demo.png',
       link:'yellowstone.jpg'
 
     },
     {
       name: 'West Yellowstone, Montana',
-      cover: '/resources/images/wyellowstone-demo.png',
+      cover: 'backgrounds/resources/images/wyellowstone-demo.png',
       link: 'wyellowstone.jpg'
     },
     {
       name: 'Cardwell, Montana',
-      cover: '/resources/images/cardwell-demo.png',
+      cover: 'backgrounds/resources/images/cardwell-demo.png',
       link: 'cardwell.jpg'
     },
     {
       name: 'Norris Geyser Basin, Wyoming',
-      cover: '/resources/images/norris-geyser-demo.png',
+      cover: 'backgrounds/resources/images/norris-geyser-demo.png',
       link:'norris-geyser.jpg'
     },
     {
